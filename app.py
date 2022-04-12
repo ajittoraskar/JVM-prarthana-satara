@@ -40,7 +40,7 @@ def data():
             ]
         file_name = 'credentials.json'
         gc = gspread.service_account(filename='credentials.json')
-        sh = gc.open_by_key("1LWtSd-F_r1pISfQNT0NwZRNgPVXEYs01qjpPweBp0PI") # or by sheet name: gc.open("TestList")
+        sh = gc.open_by_key("1snD2L9DuuKLxugyGDlCa4FgMbKT0oT31D-PeiBX070g") # or by sheet name: gc.open("TestList")
                         
         worksheet = sh.sheet1
 
