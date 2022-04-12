@@ -42,7 +42,7 @@ def data():
         gc = gspread.service_account(filename='credentials.json')
         sh = gc.open_by_key("1LWtSd-F_r1pISfQNT0NwZRNgPVXEYs01qjpPweBp0PI") # or by sheet name: gc.open("TestList")
                         
-        worksheet = sh.sheet1
+        worksheet = sh.Sheet1
 
 
         df = get_as_dataframe(worksheet, parse_dates=True, skiprows=0, header=None)
